@@ -1,5 +1,5 @@
 //
-//  CircleImage.swift
+//  LandmarkRow.swift
 //  Landmarks
 //
 //  Created by ednardo alves on 12/10/24.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct CircleImage: View {
+struct LandmarkRow: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    CircleImage()
+    LandmarkRow()
 }
