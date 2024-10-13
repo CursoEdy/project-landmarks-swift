@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		748D8DED2CBB145000224F38 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748D8DED2CBB145000224F38 /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Landmarks.app; path = "/Users/ednardoalves/Documents/workspace/swift/Material/Landmarks/build/Debug-iphoneos/Landmarks.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		748D8DEF2CBB145000224F38 /* Landmarks */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		748D8E412CBB4EBE00224F38 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +38,8 @@
 			isa = PBXGroup;
 			children = (
 				748D8DEF2CBB145000224F38 /* Landmarks */,
-				748D8DEE2CBB145000224F38 /* Products */,
+				748D8E412CBB4EBE00224F38 /* Model */,
 			);
-			sourceTree = "<group>";
-		};
-		748D8DEE2CBB145000224F38 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				748D8DED2CBB145000224F38 /* Landmarks.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,6 +59,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				748D8DEF2CBB145000224F38 /* Landmarks */,
+				748D8E412CBB4EBE00224F38 /* Model */,
 			);
 			name = Landmarks;
 			packageProductDependencies = (
@@ -95,7 +93,7 @@
 			mainGroup = 748D8DE42CBB145000224F38;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 748D8DEE2CBB145000224F38 /* Products */;
+			productRefGroup = 748D8DE42CBB145000224F38;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
