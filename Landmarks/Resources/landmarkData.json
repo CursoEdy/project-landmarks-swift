@@ -21,8 +21,8 @@
         "city": "Port Alsworth",
         "state": "Alaska",
         "id": 1002,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isFeatured": true,
+        "isFavorite": true,
         "park": "Lake Clark National Park and Preserve",
         "coordinates": {
             "longitude": -152.665167,
@@ -53,8 +53,8 @@
         "city": "Browning",
         "state": "Montana",
         "id": 1004,
-        "isFeatured": true,
-        "isFavorite": true,
+        "isFeatured": false,
+        "isFavorite": false,
         "park": "Glacier National Park",
         "coordinates": {
             "longitude": -113.536248,
@@ -133,8 +133,8 @@
         "city": "Willow",
         "state": "Alaska",
         "id": 1009,
-        "isFeatured": false,
-        "isFavorite": false,
+        "isFeatured": true,
+        "isFavorite": true,
         "park": "State Recreation Area",
         "coordinates": {
             "longitude": -150.086103,
