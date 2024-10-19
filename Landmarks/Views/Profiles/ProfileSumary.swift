@@ -8,11 +8,53 @@
 import SwiftUI
 
 struct ProfileSumary: View {
+    @Environment(ModelData.self) var modelData
+    var profile: Profile
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack (alignment: .leading, spacing: 10) {
+                Text(profile.username)
+                    .bold()
+                    .font(.title)
+                
+                Text("Notofocations: \(profile.prefersNotifications ? "On": "Off")")
+                Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
+                Text("Goal Date: ") + Text(profile.goalDate, style: .date)
+                
+                Divider()
+                
+                VStack (alignment: .leading) {
+                    Text("Completed Badges")
+                        .font(.headline)
+                    
+                    ScrollView(.horizontal) {
+                        HStack {
+                            HikeBadge(name: "Fist Hike")
+                            HikeBadge(name: "Eartg day")
+                                .hueRotation(Angle(degrees: 90))
+                            HikeBadge(name: "Tenthh Hike")
+                                .grayscale(0.5)
+                                .hueRotation(Angle(degrees: 45))
+                        }
+                        .padding(.bottom)
+                    }
+                }
+                
+                Divider()
+                
+                VStack(alignment: .leading) {
+                    Text("Recent Hikes")
+                        .font(.headline)
+                    
+                    HikeView(hike: modelData.hikes[0])
+                }
+            }
+        }
     }
 }
 
 #Preview {
-    ProfileSumary()
+    ProfileSumary(profile: Profile.default)
+        .environment(ModelData())
 }

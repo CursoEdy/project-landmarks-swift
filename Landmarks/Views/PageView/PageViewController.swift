@@ -8,12 +8,23 @@
 import SwiftUI
 import UIKit
 
-struct PageViewController: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+//struct PageViewController<Page: View>: UIViewControllerRepresentable {
+//    var pages: [Page]
+//    
+////    func makeUIViewController(context: Context) -> UIPageViewController {
+////        let pageViewController = UIPageViewController(
+////            transitionStyle: .scroll,
+////            navigationOrientation: .horizontal)
+////        
+////        return pageViewController
+////    }
+////    
+////    func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
+////        pageViewController.setViewControllers(
+////            [UIHostingController(rootView: pages[0])], dirention: .forward, animated: true)
+////    }
+//}
 
-#Preview {
-    PageViewController()
-}
+//#Preview {
+//    PageViewController()
+//}
